@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ParallaxBanner } from 'react-scroll-parallax';
-
+import Link from "next/link";
 //Import Images
 import Image from 'next/image'
 import EnvironmentPic from "../public/img/environment-pic.jpg";
@@ -29,7 +29,9 @@ function EnvironmentTesting(){
                   <h2>ENVIRONMENTAL TESTING</h2>
                   <ul className="list-inline add-icon">
                     <li>
-                      <a href="index.php">Home</a>
+                    <Link href="/" passHref>
+                          <a>Home</a>
+                        </Link>
                     </li>
                     <li style={{ paddingRight: 0, paddingLeft: 0 }}>/</li>
                     <li>Environmental Testing</li>
@@ -68,7 +70,7 @@ function EnvironmentTesting(){
           </div>
           <div className="col-md-5">
             <div className="basic-padding">
-              <Image src={EnvironmentPic} className="img-responsive img-rounded" />
+              <Image src={EnvironmentPic} className="img-responsive img-rounded" alt="env" />
             </div>
           </div>
         </div>
@@ -160,7 +162,7 @@ function EnvironmentTesting(){
         </div>
         <div className="row">
           <div className="col-md-12 bigImage">
-            <Image src={IndustryEmission} className="img-responsive" />
+            <Image src={IndustryEmission} className="img-responsive" alt="env" />
           </div>
         </div>
       </div>

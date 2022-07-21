@@ -18,6 +18,7 @@ function Home(){
     autoplay:true,
     infinite: true,
     autoplaySpeed:5000,
+    arrows:false,
     fade: true,
     speed:2000,
     slidesToShow: 1,
@@ -64,7 +65,7 @@ function Home(){
                 <div className="parent-div green">
                   <div className="child-div">
                     <div className="circle">
-                      <Image src={Lab} />
+                      <Image src={Lab} alt="lab"/>
                     </div>
                     <p>
                       CHEMICAL <br />
@@ -82,7 +83,7 @@ function Home(){
               <div className="parent-div yellow">
                   <div className="child-div">
                     <div className="circle">
-                      <Image src={Microbio} />
+                      <Image src={Microbio} alt="Mic" />
                     </div>
                     <p>
                       MICROBIOLOGICAL <br />
@@ -100,7 +101,7 @@ function Home(){
                 <div className="parent-div orange">
                   <div className="child-div">
                     <div className="circle">
-                      <Image src={Quality} />
+                      <Image src={Quality} alt="qua" />
                     </div>
                     <p>
                       INSPECTION OF <br /> COMODITIES
@@ -115,7 +116,7 @@ function Home(){
             <div className="parent-div dark-orange">
               <div className="child-div">
                 <div className="circle">
-                  <Image src={Export} />
+                  <Image src={Export} alt="exp" />
                 </div>
                 <p>
                   {" "}

@@ -1,9 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Link from "next/link";
 //Import Images
 import Image from 'next/image'
 import Map from "../public/img/map.png";
+import Japan from "../public/img/japan-map-red.svg";
+import India from "../public/img/india-map-red.svg";
 
 
 function Contact(){
@@ -27,7 +30,9 @@ function Contact(){
                   <h2>Contact Us</h2>
                   <ul className="list-inline add-icon">
                     <li>
-                      <a href="index.php">Home</a>
+                        <Link href="/" passHref>
+                          <a>Home</a>
+                        </Link>
                     </li>
                     <li style={{ paddingRight: 0, paddingLeft: 0 }}>/</li>
                     <li>Contact Us</li>
@@ -53,10 +58,12 @@ function Contact(){
             </div>
             <div className="col-md-6">
               <div className="basic-padding">
-                <Image src={Map} className="img-responsive" />
+                <Image src={Map} className="img-responsive" alt="contact" />
               </div>
               <div className="details">
-                <img src="img/india-map-red.svg" />
+              <span className="indianMap">
+                    <Image src={India} className="flag" alt="India map" />
+                    </span>
                 <span>Headquaters - India</span>
                 <p>
                   107 B, Block-F, New Alipore, Kolkata - 700 053, India <br />
@@ -65,7 +72,7 @@ function Contact(){
                 </p>
               </div>
               <div className="details">
-                <img src="img/japan-map-red.svg" />
+              <Image src={Japan} alt="japan" />
                 <span>JAPAN</span>
                 <p>
                   187-4, 1-Chome shinmei-cho, Tokyo, Japan <br />

@@ -1,6 +1,6 @@
 $(window).on('scroll',function(){
   var wscroll = $(this).scrollTop();
-  if(wscroll > 20){
+  if(wscroll > 31){
    $(".navbar").addClass("navbar-fixed-top");
   }
   else{

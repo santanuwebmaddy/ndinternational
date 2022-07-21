@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Link from "next/link";  
 //Import Images
 import Image from 'next/image'
 import CoalImage2 from "../public/img/coal-img2.jpg";
@@ -29,7 +30,10 @@ export default function CoalTesting(){
                   <h2>Coal</h2>
                   <ul className="list-inline add-icon">
                     <li>
-                      <a href="/">Home</a>
+                      <Link href="/" passHref>
+                        <a>Home</a>
+                      </Link>
+                      
                     </li>
                     <li style={{ paddingRight: 0, paddingLeft: 0 }}>/</li>
                     <li>Coal</li>
@@ -66,13 +70,13 @@ export default function CoalTesting(){
                   </div> */}
                   <div className="col-md-6">
                     <div className="media parameters">
-                      <Image src={BestSeller} />
+                      <Image src={BestSeller} alt="coal" />
                       <h4>Registered with Central Electricity Authority </h4>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="media parameters">
-                    <Image src={Award} />
+                    <Image src={Award} alt="coal" />
                       <h4>Registered with Coal India. </h4>
                     </div>
                   </div>
@@ -88,7 +92,7 @@ export default function CoalTesting(){
             </div>
             <div className="col-md-5">
               <div className="basic-padding">
-                <Image src={CoalImage2} className="img-responsive img-rounded"
+                <Image src={CoalImage2} className="img-responsive img-rounded" alt="coal"
                 />
               </div>
             </div>

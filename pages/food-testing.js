@@ -1,11 +1,13 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Link from "next/link";
 //Import Images
 import Image from 'next/image'
 import Foodimg from "../public/img/food-img.jpg";
 import Recommended from "../public/img/recommended.svg";
 import SecureShield from "../public/img/secure-shield.svg";
+import HealthyFood from "../public/img/healthy-food.svg";
 
 
 
@@ -30,7 +32,9 @@ function FoodTesting(){
                   <h2>Food &amp; Agriculture</h2>
                   <ul className="list-inline add-icon">
                     <li>
-                      <a href="index.php">Home</a>
+                      <Link href="/" passHref>
+                        <a>Home</a>
+                      </Link>
                     </li>
                     <li style={{ paddingRight: 0, paddingLeft: 0 }}>/</li>
                     <li>Food &amp; Agriculture</li>
@@ -66,7 +70,7 @@ function FoodTesting(){
             </div>
             <div className="col-md-5">
               <div className="basic-padding">
-                <Image src={Foodimg} className="img-responsive img-rounded" />
+                <Image src={Foodimg} className="img-responsive img-rounded" alt="food" />
               </div>
             </div>
           </div>
@@ -78,7 +82,7 @@ function FoodTesting(){
             <div className="col-md-5">
               <div className="media parameters">
                 <div className="media-left">
-                  <Image src={Recommended} />
+                  <Image src={Recommended} alt="food" />
                 </div>
                 <div className="media-body">
                   <h4>Quality Parameters</h4>
@@ -112,7 +116,7 @@ function FoodTesting(){
               <div className="media parameters">
                 <div className="media-left">
                   <span>
-                    <Image src={SecureShield } />
+                    <Image src={SecureShield } alt="food" />
                   </span>
                 </div>
                 <div className="media-body">
@@ -145,7 +149,7 @@ function FoodTesting(){
               </div>
             </div>
           </div>
-          <div className="row mt-40">
+          {/* <div className="row mt-40">
             <div className="col-md-12">
               <br />
               <h2 className="title-after-before text-center mb-40">
@@ -156,7 +160,7 @@ function FoodTesting(){
               <div className="col-md-3">
                 <div className="media food-icon">
                   <div className="media-left media-middle">
-                    <img src="img/healthy-food.svg" className="media-object" />
+                    <Image src={HealthyFood} className="media-object" alt="food" />
                   </div>
                   <div className="media-body">
                     <p>Vegetables</p>
@@ -416,7 +420,7 @@ function FoodTesting(){
                 </div>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <style jsx>{`

@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Link from "next/link";
 //Import Images
 import Image from 'next/image'
 import SoilImage from "../public/img/soil-img.jpg";
@@ -26,7 +27,9 @@ export default function SoilTesting(){
                   <h2>Soil and Fertilizer</h2>
                   <ul className="list-inline add-icon">
                     <li>
-                      <a href="/">Home</a>
+                    <Link href="/" passHref>
+                      <a>Home</a>
+                      </Link>
                     </li>
                     <li style={{ paddingRight: 0, paddingLeft: 0 }}>/</li>
                     <li>Soil and Fertilizer</li>
@@ -69,7 +72,7 @@ export default function SoilTesting(){
             </div>
             <div className="col-md-5">
               <div className="basic-padding">
-                <Image src={SoilImage} className="img-responsive img-rounded" />
+                <Image src={SoilImage} className="img-responsive img-rounded" alt="soil" />
               </div>
             </div>
           </div>

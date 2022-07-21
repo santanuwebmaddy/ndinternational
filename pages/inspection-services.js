@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Link from 'next/link'
 //Import Images
 import Image from 'next/image'
 import CoalTest from "../public/img/coal-test.jpg";
@@ -25,9 +26,11 @@ function InspectionServices(){
                 <div className="banner-text">
                   <h2>Inspection services</h2>
                   <ul className="list-inline add-icon">
-                    <li>
-                      <a href="index.php">Home</a>
-                    </li>
+                     <li>
+                     <Link href="/" passHref>
+                      <a>Home</a>
+                      </Link>
+                     </li>
                     <li style={{ paddingRight: 0, paddingLeft: 0 }}>/</li>
                     <li>Inspection services</li>
                   </ul>
@@ -50,20 +53,20 @@ function InspectionServices(){
                   <span>Inspection services</span>
                 </h2>
                 <p>
-                  ND International's inspection service has earned repute of being
+                  ND International`&apos;`s inspection service has earned repute of being
                   an ethical concern where both buyer and seller can trust to
                   provide transparent and unbiased support. We have earned the
                   repute of giving an impartial and accurate report of quality
                   control. Our round the clock well trained and experienced field
                   officers at the mine sites, loading ports and at the discharge
                   ports work tirelessly to provide best possible services adding to
-                  our customer's delight.
+                  our customer`&apos;`s delight.
                 </p>
               </div>
             </div>
             <div className="col-md-5">
               <div className="basic-padding">
-                <Image src={CoalTest} className="img-responsive img-rounded"
+                <Image src={CoalTest} className="img-responsive img-rounded" alt="coal"
                 />
               </div>
             </div>

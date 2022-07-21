@@ -1,3 +1,9 @@
+import Link from "next/link";
+//Import Images
+import Image from 'next/image'
+import IndiaMap from "../public/img/india-map.svg";
+import JapanMap from "../public/img/japan-map.svg";
+
 function Footer(){
   return(
     <>
@@ -27,7 +33,9 @@ function Footer(){
                 <h2>GET IN TOUCH</h2>
                 <ul className="list-inline" style={{ marginBottom: 15 }}>
                   <li>
-                    <img src="img/india-map.svg" className="flag" />
+                    <span className="indianMap">
+                    <Image src={IndiaMap} className="flag" alt="India map" />
+                    </span>
                   </li>
                   <li>
                     <p>India</p>
@@ -43,7 +51,7 @@ function Footer(){
                 </p>
                 <ul className="list-inline" style={{ marginBottom: 15 }}>
                   <li>
-                    <img src="img/japan-map.svg" className="flag" />
+                    <Image src={JapanMap} className="flag" alt="japan map" />
                   </li>
                   <li>
                     <p>JAPAN</p>
@@ -61,30 +69,44 @@ function Footer(){
                 <h2>QUICK LINKS</h2>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="index.php">HOME</a>
+                    <Link href="/" passHref>
+                      <a>HOME</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="food-testing.php">Food &amp; Agriculture Testing</a>
+                    <Link href="/food-testing" passHref>
+                      <a>Food &amp; Agriculture Testing</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="environment-testing.php">Environmental Testing</a>
+                    <Link href="/environment-testing" passHref>
+                      <a>Environmental Testing</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="ores-minerals-testing.php">
-                      Ores &amp; Minerals Testing
-                    </a>
+                    <Link href="/ores-minerals-testing" passHref>
+                      <a>Ores &amp; Minerals Testing</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="water-testing.php">Water Testing</a>
+                    <Link href="/water-testing" passHref>
+                      <a>Water Testing</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="soil-testing.php">Soil and Fertilizer Testing</a>
+                    <Link href="/soil-testing" passHref>
+                      <a>Soil and Fertilizer Testing</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="coal-testing.php">Coal Testing</a>
+                    <Link href="/coal-testing" passHref>
+                      <a>Coal Testing</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="other-testing.php">Others Testing</a>
+                    <Link href="/other-testing" passHref>
+                      <a>Others Testing</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -94,16 +116,24 @@ function Footer(){
                 <h2>SOCIAL LINKS</h2>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#">FACEBOOK</a>
+                    <Link href="#" passHref>
+                      <a>FACEBOOK</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">TWITTER</a>
+                  <Link href="#" passHref>
+                      <a>TWITTER</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">LINKEDIN</a>
+                    <Link href="#" passHref>
+                      <a>LINKEDIN</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">YOUTUBE</a>
+                    <Link href="#" passHref>
+                      <a>YOUTUBE</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -120,17 +150,21 @@ function Footer(){
             <div className="col-md-6">
               <p className="pull-right">
                 Website Developed &amp; Maintained by &nbsp;{" "}
-                <a href="https://www.webmaddy.com/"> Webmaddy</a>
+                <Link href="https://www.webmaddy.com/" passHref>
+                  <a>Webmaddy</a>
+                </Link>
               </p>
             </div>
           </div>
         </div>
       </div>
-      <a target="_blank" href="https://wa.me/916291191479">
+      <Link href="https://wa.me/916291191479" passHref target="_blank">
+       <a>
         <div className="section-whatsapp">
           <i className="fa fa-whatsapp" aria-hidden="true" />
         </div>
       </a>
+      </Link>
     </>
   )
 }

@@ -24,6 +24,7 @@ function Test(){
     dots: false,
     autoplay:true,
     autoplaySpeed:3000,
+    arrows:false,
     infinite: true,
     slidesToShow:8,
     slidesToScroll: 2,
@@ -80,46 +81,46 @@ function Test(){
             >
               <Slider {...settings} className="mt-25 clientsLogo">
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={Bata} quality={100} />
+                <Image src={Bata} quality={100} alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={Berger} quality={100} />
+                <Image src={Berger} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={Bp} quality={100} />
+                <Image src={Bp} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={britannia} quality={100} />
+                <Image src={britannia} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={dabur} quality={100} />
+                <Image src={dabur} quality={100} alt="logo"  />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={dvc} quality={100} />
+                <Image src={dvc} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={hyatt} quality={100} />
+                <Image src={hyatt} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={lt} quality={100} />
+                <Image src={lt} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={oberoi} quality={100} />
+                <Image src={oberoi} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={pepsico} quality={100} />
+                <Image src={pepsico} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={seimens} quality={100} />
+                <Image src={seimens} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={tata} quality={100} />
+                <Image src={tata} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={yule} quality={100} />
+                <Image src={yule} quality={100}  alt="logo" />
                 </div>
                 <div style={{marginLeft:15, marginRight:15}}>
-                <Image src={unilever} quality={100} />
+                <Image src={unilever} quality={100}  alt="logo" />
                 </div>
               </Slider>
 

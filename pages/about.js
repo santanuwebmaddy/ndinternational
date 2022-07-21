@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Clients from "../components/Logos";
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Link from 'next/link'
 //Import Images
 import Image from 'next/image'
 import AboutPicture2 from "../public/img/about-picture2.jpg";
@@ -27,9 +28,11 @@ function About(){
                 <div className="banner-text">
                   <h2>ABOUT US</h2>
                   <ul className="list-inline add-icon">
-                    <li>
-                      <a href="index.php">Home</a>
-                    </li>
+                     <li>
+                     <Link href="/" passHref>
+                         <a>Home</a>
+                      </Link>
+                     </li>
                     <li style={{ paddingRight: 0, paddingLeft: 0 }}>/</li>
                     <li>About Us</li>
                   </ul>
@@ -109,7 +112,7 @@ function About(){
             </div>
             <div className="col-md-5">
               <div className="basic-padding">
-                <Image src={AboutPicture2} className="img-responsive img-rounded" />
+                <Image src={AboutPicture2} className="img-responsive img-rounded" alt="about Image" />
               </div>
             </div>
           </div>

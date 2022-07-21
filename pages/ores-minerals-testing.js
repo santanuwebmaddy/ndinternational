@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Link from "next/link";
 //Import Images
 import Image from 'next/image'
 import CoalImage from "../public/img/coal-img.jpg";
@@ -26,7 +27,9 @@ export default function OresMineralsTesting(){
                   <h2>Ores and Minerals</h2>
                   <ul className="list-inline add-icon">
                     <li>
-                      <a href="/">Home</a>
+                      <Link href="/" passHref>
+                      <a>Home</a>
+                      </Link>
                     </li>
                     <li style={{ paddingRight: 0, paddingLeft: 0 }}>/</li>
                     <li>Ores and Minerals</li>
@@ -83,7 +86,7 @@ export default function OresMineralsTesting(){
             </div>
             <div className="col-md-5">
               <div className="basic-padding">
-                <Image src={CoalImage} className="img-responsive img-rounded" />
+                <Image src={CoalImage} className="img-responsive img-rounded" alt="coal" />
               </div>
             </div>
           </div>

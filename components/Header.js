@@ -42,7 +42,7 @@ function Header(){
                   <li>
                     <Link href="tel:+919830654 565" passHref>
                       <a>
-                        <Image src={IndiaFlag} />
+                        <Image src={IndiaFlag} alt="Indian Flag" />
                         <span>+91 9830 654 565</span>
                       </a>
                     </Link>
@@ -50,7 +50,7 @@ function Header(){
                   <li>
                     <Link href="tel:+489874321" passHref>
                       <a>
-                        <Image src={JapanFlag} />
+                        <Image src={JapanFlag} alt="Japan Flag" />
                         <span>+48 9874 321</span>
                       </a>
                     </Link>
@@ -79,7 +79,7 @@ function Header(){
             <Link href="/" passHref>
               <a className="navbar-brand">
                 <span className="img-responsive">
-                  <Image priority src={Logo} />
+                  <Image priority src={Logo} alt="Logo" />
                 </span>
               </a>
             </Link>
