@@ -1,19 +1,14 @@
-.mobileBanner {
-  display: none;
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
-}
+
 
 @media(max-width:767px) {
   .services {
-      top: 50px;
+      top: 50px !important;
   }
   .banner {
-      display: none;
+      display: none !important;
   }
   .mobileBanner {
-      display: block;
+      display: block !important;
   }
 }
 
@@ -276,17 +271,19 @@ a:hover {
 .mobileBanner {
   padding-top: 0px;
   padding-bottom: 0px;
-  height: 85vh;
   background-position: center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   position: relative;
-  overflow: hidden
+  display: none;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
 }
 .mobileBanner .content h2 {
-  font-size: 34px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   margin-bottom: 4px;
   line-height: 1.4;
   letter-spacing: 0;
@@ -1017,6 +1014,16 @@ a:hover {
   width: 100px !important;
 }
 
+.mobileBanner .content {
+  font-weight: 400;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
+}
 .banner .content {
   font-weight: 400;
   position: absolute;
