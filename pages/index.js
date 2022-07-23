@@ -26,7 +26,7 @@ function Home(){
   }
   return(
     <>
-    <div className="banner mobileBanner" style={{backgroundImage: 'url("img/banner1.webp")'}}>
+    <div className="mobileBanner" style={{backgroundImage: 'url("img/banner1.webp")'}}>
       <div className="overlay" />
       <div className="content">
         <div className="container">
