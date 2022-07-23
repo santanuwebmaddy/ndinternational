@@ -282,7 +282,7 @@ a:hover {
   height: 100vh;
 }
 .mobileBanner .content h2 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   margin-bottom: 4px;
   line-height: 1.4;
@@ -291,7 +291,7 @@ a:hover {
 }
 .mobileBanner .content p {
   font-weight: 400;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 1.5;
   color: #d0d0d0
