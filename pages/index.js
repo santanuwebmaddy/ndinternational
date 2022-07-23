@@ -26,6 +26,28 @@ function Home(){
   }
   return(
     <>
+    <div className="mobileBanner" style={{backgroundImage: 'url("img/banner1.webp")'}}>
+      <div className="overlay" />
+      <div className="content">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8">
+              <h2>
+                KNOWN THE WORLD OVER FOR <br />
+                COMMITMENT TOWARDS <br />
+                ACCURACY AND RELIABILITY
+              </h2>
+              <p>
+                Carrying on our testing legacy <span>since 1892</span>
+              </p>
+              <Link href="/contact" passHref>
+                <a  className="btn btn-primary">Get in touch</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
     <div className="banner">
       <Slider {...settings}>
         <div>
